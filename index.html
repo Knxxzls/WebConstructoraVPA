@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Constructora VPA | Ejecución Comercial y Ley 21.442</title>
+    
+    <!-- Tipografías -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Plus+Jakarta+Sans:wght@600;700&display=swap" rel="stylesheet">
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        heading: ['Plus Jakarta Sans', 'sans-serif'],
+                    },
+                    colors: {
+                        vpa: {
+                            black: '#0F172A',
+                            blue: '#2563EB',
+                        }
+                    },
+                    animation: {
+                        'marquee': 'marquee 25s linear infinite',
+                    },
+                    keyframes: {
+                        marquee: {
+                            '0%': { transform: 'translateX(0%)' },
+                            '100%': { transform: 'translateX(-100%)' },
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-slate-50 text-slate-600 font-sans antialiased overflow-x-hidden">
+
+    <!-- 1. NAVBAR FLOTANTE -->
+    <header class="fixed top-6 left-0 right-0 z-50 px-4">
+        <nav class="max-w-5xl mx-auto bg-white/80 backdrop-blur-md border border-slate-200/80 shadow-[0_10px_30px_-10px_rgba(15,23,42,0.05)] rounded-full px-6 py-3 flex items-center justify-between transition-all duration-300">
+            <!-- Logo -->
+            <a href="#" class="flex-shrink-0 flex items-center">
+                <img src="logo_vpa_black_vector.svg" alt="Constructora VPA" class="h-9 w-auto">
+            </a>
+
+            <!-- Enlaces -->
+            <div class="hidden md:flex items-center gap-7">
+                <a href="#" class="text-sm font-semibold text-vpa-black transition-colors">Inicio</a>
+                <a href="#" class="text-sm font-medium hover:text-vpa-black transition-colors">Habilitación Comercial</a>
+                <a href="#" class="text-sm font-medium hover:text-vpa-black transition-colors">Ley N° 21.442</a>
+                <a href="#" class="text-sm font-medium hover:text-vpa-black transition-colors">Respaldo</a>
+                <a href="#" class="text-sm font-medium hover:text-vpa-black transition-colors">Proyectos</a>
+            </div>
+
+            <!-- Botón WhatsApp -->
+            <a href="#" class="flex items-center gap-2 bg-vpa-black text-white px-5 py-2.5 rounded-full text-sm font-semibold hover:bg-slate-800 transition-all hover:-translate-y-0.5 shadow-sm">
+                <span class="w-2 h-2 bg-emerald-500 rounded-full animate-pulse"></span>
+                Cotizar en WhatsApp
+            </a>
+        </nav>
+    </header>
+
+    <main class="pt-32">
+        <!-- 2. HERO SECTION -->
+        <section class="max-w-7xl mx-auto px-4 flex flex-col items-center text-center mt-12 mb-20">
+            <div class="inline-flex items-center px-4 py-1.5 rounded-full bg-blue-50 border border-blue-100 mb-8">
+                <span class="text-xs font-semibold text-vpa-blue tracking-wider">INSCRITOS EN MINVU • PROVEEDORES CHILECOMPRA</span>
+            </div>
+            
+            <h1 class="text-5xl md:text-6xl font-heading font-bold text-vpa-black tracking-tight leading-[1.15] mb-6 max-w-4xl">
+                Ejecución de obras comerciales y mantención sin atrasos.
+            </h1>
+            
+            <p class="text-lg text-slate-500 max-w-2xl mb-10 leading-relaxed">
+                Especialistas en habilitación comercial y cumplimiento normativo Ley N° 21.442. Presupuestos transparentes y plazos garantizados por contrato en todo Chile.
+            </p>
+            
+            <div class="flex flex-col sm:flex-row gap-4">
+                <a href="#" class="bg-vpa-black text-white px-8 py-3.5 rounded-full font-semibold hover:-translate-y-1 transition-transform shadow-lg">Hablar con un Especialista</a>
+                <a href="#" class="bg-white text-vpa-black border border-slate-200 px-8 py-3.5 rounded-full font-semibold hover:bg-slate-50 transition-colors">Explorar Especialidades</a>
+            </div>
+        </section>
+
+        <!-- 3. TRUST BAR (CARRUSEL INFINITO CORREGIDO) -->
+        <section class="max-w-5xl mx-auto mb-32 relative overflow-hidden px-4">
+            <p class="text-center text-xs font-semibold text-slate-400 tracking-[0.2em] uppercase mb-10">
+                Empresas que confían en nuestra ejecución
+            </p>
+            
+            <!-- Contenedor del Carrusel -->
+            <div class="flex w-full overflow-hidden [mask-image:linear-gradient(to_right,transparent,black_10%,black_90%,transparent)]">
+                <!-- Pista 1 (Añadido shrink-0 para evitar que se aplaste) -->
+                <div class="flex shrink-0 animate-marquee items-center justify-around gap-16 min-w-full pr-16 grayscale opacity-60">
+                    <h2 class="text-2xl font-heading font-bold text-slate-500">CENCOSUD</h2>
+                    <h2 class="text-2xl font-heading font-bold text-slate-500">ROSEN</h2>
+                    <h2 class="text-2xl font-heading font-bold text-slate-500">DERCO</h2>
+                    <h2 class="text-2xl font-heading font-bold text-slate-500">PUC</h2>
+                    <h2 class="text-2xl font-heading font-bold text-slate-500">DeMarco</h2>
+                </div>
+                <!-- Pista 2 -->
+                <div class="flex shrink-0 animate-marquee items-center justify-around gap-16 min-w-full pr-16 grayscale opacity-60" aria-hidden="true">
+                    <h2 class="text-2xl font-heading font-bold text-slate-500">CENCOSUD</h2>
+                    <h2 class="text-2xl font-heading font-bold text-slate-500">ROSEN</h2>
+                    <h2 class="text-2xl font-heading font-bold text-slate-500">DERCO</h2>
+                    <h2 class="text-2xl font-heading font-bold text-slate-500">PUC</h2>
+                    <h2 class="text-2xl font-heading font-bold text-slate-500">DeMarco</h2>
+                </div>
+            </div>
+        </section>
+
+        <!-- Aquí irá el bloque 4: Bento Grid -->
+<!-- 4. BENTO GRID: ESPECIALIDADES -->
+        <section class="max-w-6xl mx-auto px-4 mb-32">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-heading font-bold text-vpa-black tracking-tight mb-4">
+                    Dos líneas de especialización.<br>Un mismo estándar de rigor técnico.
+                </h2>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                
+                <!-- Tarjeta 1: Habilitación Comercial (Acento Índigo) -->
+                <div class="bg-white border border-slate-200 rounded-[20px] p-8 md:p-10 shadow-[0_10px_30px_-10px_rgba(15,23,42,0.05)] hover:shadow-[0_10px_40px_-10px_rgba(15,23,42,0.08)] transition-all duration-300 flex flex-col h-full group relative overflow-hidden">
+                    
+                    <!-- Resplandor decorativo de fondo (Estilo Startup) -->
+                    <div class="absolute top-0 right-0 -mr-16 -mt-16 w-64 h-64 rounded-full bg-indigo-50/80 blur-3xl transition-transform duration-700 group-hover:scale-125"></div>
+                    
+                    <div class="relative z-10 flex-1">
+                        <span class="inline-block px-3 py-1 bg-indigo-50 text-indigo-600 text-xs font-bold tracking-wider rounded-full mb-6 border border-indigo-100">
+                            RETAIL, OFICINAS Y CORPORATIVO
+                        </span>
+                        <h3 class="text-2xl font-heading font-bold text-vpa-black mb-4">Habilitación Comercial y Obras Civiles</h3>
+                        <p class="text-slate-500 mb-8 leading-relaxed">
+                            Ejecutamos bajo estrictos manuales de centros comerciales y plazos críticos de apertura. Cada día con el local cerrado es pérdida de ventas; nosotros garantizamos la entrega a tiempo.
+                        </p>
+                        
+                        <ul class="space-y-4 mb-10 text-sm text-slate-600 font-medium">
+                            <li class="flex items-start gap-3">
+                                <span class="text-indigo-600 text-lg leading-none">✓</span> Remodelación integral de tiendas y oficinas.
+                            </li>
+                            <li class="flex items-start gap-3">
+                                <span class="text-indigo-600 text-lg leading-none">✓</span> Instalaciones eléctricas (SEC), clima y terminaciones.
+                            </li>
+                            <li class="flex items-start gap-3">
+                                <span class="text-indigo-600 text-lg leading-none">✓</span> Entrega llave en mano lista para operar.
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <div class="relative z-10 flex flex-col gap-3 mt-auto pt-6 border-t border-slate-100">
+                        <a href="#" class="w-full text-center bg-vpa-black hover:bg-slate-800 text-white px-5 py-3 rounded-full font-semibold transition-colors shadow-sm">Cotizar Obra (WhatsApp)</a>
+                        <a href="#" class="w-full text-center bg-white border border-slate-200 hover:bg-slate-50 text-vpa-black px-5 py-3 rounded-full font-semibold transition-colors">Ver Especialidad →</a>
+                    </div>
+                </div>
+
+                <!-- Tarjeta 2: Ley 21.442 (Acento Esmeralda) -->
+                <div class="bg-white border border-slate-200 rounded-[20px] p-8 md:p-10 shadow-[0_10px_30px_-10px_rgba(15,23,42,0.05)] hover:shadow-[0_10px_40px_-10px_rgba(15,23,42,0.08)] transition-all duration-300 flex flex-col h-full group relative overflow-hidden">
+                    
+                    <!-- Resplandor decorativo de fondo -->
+                    <div class="absolute top-0 right-0 -mr-16 -mt-16 w-64 h-64 rounded-full bg-emerald-50/80 blur-3xl transition-transform duration-700 group-hover:scale-125"></div>
+                    
+                    <div class="relative z-10 flex-1">
+                        <span class="inline-block px-3 py-1 bg-emerald-50 text-emerald-600 text-xs font-bold tracking-wider rounded-full mb-6 border border-emerald-100">
+                            ADMINISTRADORES Y COMITÉS
+                        </span>
+                        <h3 class="text-2xl font-heading font-bold text-vpa-black mb-4">Mantención Edificios Ley N° 21.442</h3>
+                        <p class="text-slate-500 mb-8 leading-relaxed">
+                            Blindamos legalmente al comité y al administrador frente a multas, ejecutando obras con personal 100% formal, asegurado y bajo la normativa vigente.
+                        </p>
+                        
+                        <ul class="space-y-4 mb-10 text-sm text-slate-600 font-medium">
+                            <li class="flex items-start gap-3">
+                                <span class="text-emerald-600 text-lg leading-none">✓</span> Impermeabilización, techumbres y fachadas.
+                            </li>
+                            <li class="flex items-start gap-3">
+                                <span class="text-emerald-600 text-lg leading-none">✓</span> Mantención de áreas comunes y redes de emergencia.
+                            </li>
+                            <li class="flex items-start gap-3">
+                                <span class="text-emerald-600 text-lg leading-none">✓</span> Informes técnicos y plan anual de mantención.
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <div class="relative z-10 flex flex-col gap-3 mt-auto pt-6 border-t border-slate-100">
+                        <a href="#" class="w-full text-center bg-vpa-black hover:bg-slate-800 text-white px-5 py-3 rounded-full font-semibold transition-colors shadow-sm">Agendar Visita (WhatsApp)</a>
+                        <a href="#" class="w-full text-center bg-white border border-slate-200 hover:bg-slate-50 text-vpa-black px-5 py-3 rounded-full font-semibold transition-colors">Ver Especialidad →</a>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        <!-- 5. BENTO GRID: ESCUDO ANTI-RIESGO -->
+        <section class="max-w-6xl mx-auto px-4 mb-32">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <h2 class="text-3xl md:text-4xl font-heading font-bold text-vpa-black tracking-tight mb-4">
+                    Por qué los mandantes más exigentes nos eligen
+                </h2>
+                <p class="text-lg text-slate-500">
+                    Eliminamos la incertidumbre de contratar una constructora con garantías reales antes de poner el primer ladrillo.
+                </p>
+            </div>
+
+            <!-- Grilla 2x2 -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                
+                <!-- Caja 1: Acreditación (Destacada sutilmente con icono azul) -->
+                <div class="bg-white border border-slate-200 rounded-[20px] p-8 md:p-10 shadow-sm hover:shadow-[0_10px_30px_-10px_rgba(15,23,42,0.05)] transition-shadow">
+                    <div class="w-12 h-12 rounded-full bg-blue-50 border border-blue-100 flex items-center justify-center mb-6">
+                        <!-- Icono SVG Escudo -->
+                        <svg class="w-6 h-6 text-vpa-blue" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path></svg>
+                    </div>
+                    <h3 class="text-xl font-heading font-bold text-vpa-black mb-3">Inscritos en MINVU y ChileCompra</h3>
+                    <p class="text-slate-500 leading-relaxed text-sm">
+                        Contamos con acreditación vigente para contratar con el Estado y corporaciones. Su inversión está respaldada por una empresa formal, auditada y de alta capacidad.
+                    </p>
+                </div>
+
+                <!-- Caja 2: Laboral -->
+                <div class="bg-white border border-slate-200 rounded-[20px] p-8 md:p-10 shadow-sm hover:shadow-[0_10px_30px_-10px_rgba(15,23,42,0.05)] transition-shadow">
+                    <div class="w-12 h-12 rounded-full bg-slate-50 border border-slate-200 flex items-center justify-center mb-6">
+                        <!-- Icono SVG Equipo -->
+                        <svg class="w-6 h-6 text-slate-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"></path></svg>
+                    </div>
+                    <h3 class="text-xl font-heading font-bold text-vpa-black mb-3">Blindaje en Subcontratación (F30-1)</h3>
+                    <p class="text-slate-500 leading-relaxed text-sm">
+                        Todo nuestro personal en obra cuenta con leyes sociales al día y seguros de accidentes. Eliminamos al 100% el riesgo de demandas solidarias para su comité.
+                    </p>
+                </div>
+
+                <!-- Caja 3: Transparencia -->
+                <div class="bg-white border border-slate-200 rounded-[20px] p-8 md:p-10 shadow-sm hover:shadow-[0_10px_30px_-10px_rgba(15,23,42,0.05)] transition-shadow">
+                    <div class="w-12 h-12 rounded-full bg-slate-50 border border-slate-200 flex items-center justify-center mb-6">
+                        <!-- Icono SVG Calculadora/Finanzas -->
+                        <svg class="w-6 h-6 text-slate-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 7h6m0 10v-3m-3 3h.01M9 17h.01M9 14h.01M12 14h.01M15 11h.01M12 11h.01M9 11h.01M7 21h10a2 2 0 002-2V5a2 2 0 00-2-2H7a2 2 0 00-2 2v14a2 2 0 002 2z"></path></svg>
+                    </div>
+                    <h3 class="text-xl font-heading font-bold text-vpa-black mb-3">Presupuesto sin Costos Ocultos</h3>
+                    <p class="text-slate-500 leading-relaxed text-sm">
+                        Cubicamos cada partida con precisión técnica en la visita a terreno. Lo que se aprueba en el presupuesto inicial es exactamente lo que se ejecuta, sin sorpresas.
+                    </p>
+                </div>
+
+                <!-- Caja 4: Experiencia (Destacada sutilmente con icono azul) -->
+                <div class="bg-white border border-slate-200 rounded-[20px] p-8 md:p-10 shadow-sm hover:shadow-[0_10px_30px_-10px_rgba(15,23,42,0.05)] transition-shadow">
+                    <div class="w-12 h-12 rounded-full bg-blue-50 border border-blue-100 flex items-center justify-center mb-6">
+                        <!-- Icono SVG Estrella/Logro -->
+                        <svg class="w-6 h-6 text-vpa-blue" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z"></path></svg>
+                    </div>
+                    <h3 class="text-xl font-heading font-bold text-vpa-black mb-3">+10 Años y Miles de m² Ejecutados</h3>
+                    <p class="text-slate-500 leading-relaxed text-sm">
+                        Más de una década entregando proyectos de alta exigencia para líderes del retail y la industria en Chile. Cero historial de obras abandonadas a mitad de camino.
+                    </p>
+                </div>
+
+            </div>
+        </section>
+        <!-- 6. SHOWCASE DE PROYECTOS -->
+        <section class="max-w-7xl mx-auto px-4 mb-32">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <h2 class="text-3xl md:text-4xl font-heading font-bold text-vpa-black tracking-tight mb-4">
+                    Ejecución comprobada en terreno
+                </h2>
+                <p class="text-lg text-slate-500">
+                    Conozca algunos de los proyectos desarrollados bajo nuestros estándares de calidad y plazo, entregados listos para operar.
+                </p>
+            </div>
+
+            <!-- Grilla de Proyectos (3 Columnas) -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                
+                <!-- Proyecto 1 (Retail) -->
+                <div class="group bg-white border border-slate-200 rounded-[20px] overflow-hidden shadow-sm hover:shadow-[0_10px_30px_-10px_rgba(15,23,42,0.05)] transition-all duration-300">
+                    <div class="relative h-60 overflow-hidden bg-slate-100">
+                        <!-- Imagen de Obra -->
+                        <img src="https://placehold.co/800x600/e2e8f0/64748b?text=Foto+Obra+Retail" alt="Proyecto Retail" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700">
+                        
+                        <!-- Etiqueta Flotante (Glassmorphism) -->
+                        <div class="absolute top-4 left-4 bg-white/90 backdrop-blur-sm px-3 py-1.5 rounded-full border border-slate-200/50 shadow-sm flex items-center gap-2">
+                            <span class="w-2 h-2 rounded-full bg-indigo-500"></span>
+                            <span class="text-xs font-bold tracking-wide text-vpa-black">RETAIL • CENCOSUD</span>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-heading font-bold text-vpa-black mb-2">Habilitación Local Comercial</h3>
+                        <p class="text-slate-500 text-sm mb-4 line-clamp-2">
+                            Obra civil, tabiquería, cielos e instalaciones eléctricas SEC bajo el estricto manual de arquitectura del centro comercial.
+                        </p>
+                        <div class="flex items-center gap-2 text-emerald-600 font-semibold text-sm">
+                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                            Obra Recepcionada Conforme
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Proyecto 2 (Ley 21.442) -->
+                <div class="group bg-white border border-slate-200 rounded-[20px] overflow-hidden shadow-sm hover:shadow-[0_10px_30px_-10px_rgba(15,23,42,0.05)] transition-all duration-300">
+                    <div class="relative h-60 overflow-hidden bg-slate-100">
+                        <!-- Imagen de Obra -->
+                        <img src="https://placehold.co/800x600/e2e8f0/64748b?text=Foto+Obra+Edificio" alt="Proyecto Edificio" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700">
+                        
+                        <!-- Etiqueta Flotante (Glassmorphism) -->
+                        <div class="absolute top-4 left-4 bg-white/90 backdrop-blur-sm px-3 py-1.5 rounded-full border border-slate-200/50 shadow-sm flex items-center gap-2">
+                            <span class="w-2 h-2 rounded-full bg-emerald-500"></span>
+                            <span class="text-xs font-bold tracking-wide text-vpa-black">LEY 21.442 • COMUNIDAD</span>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-heading font-bold text-vpa-black mb-2">Mantención Integral de Fachada</h3>
+                        <p class="text-slate-500 text-sm mb-4 line-clamp-2">
+                            Reparación de grietas, impermeabilización y pintura exterior en edificio residencial de 15 pisos con personal certificado F30-1.
+                        </p>
+                        <div class="flex items-center gap-2 text-emerald-600 font-semibold text-sm">
+                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                            Obra Recepcionada Conforme
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Proyecto 3 (Oficinas/Corporativo) -->
+                <div class="group bg-white border border-slate-200 rounded-[20px] overflow-hidden shadow-sm hover:shadow-[0_10px_30px_-10px_rgba(15,23,42,0.05)] transition-all duration-300">
+                    <div class="relative h-60 overflow-hidden bg-slate-100">
+                        <!-- Imagen de Obra -->
+                        <img src="https://placehold.co/800x600/e2e8f0/64748b?text=Foto+Obra+Oficinas" alt="Proyecto Oficinas" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700">
+                        
+                        <!-- Etiqueta Flotante (Glassmorphism) -->
+                        <div class="absolute top-4 left-4 bg-white/90 backdrop-blur-sm px-3 py-1.5 rounded-full border border-slate-200/50 shadow-sm flex items-center gap-2">
+                            <span class="w-2 h-2 rounded-full bg-indigo-500"></span>
+                            <span class="text-xs font-bold tracking-wide text-vpa-black">CORPORATIVO • DERCO</span>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-heading font-bold text-vpa-black mb-2">Remodelación de Oficinas</h3>
+                        <p class="text-slate-500 text-sm mb-4 line-clamp-2">
+                            Habilitación de espacios de trabajo colaborativo, instalación de clima y red de datos en tiempo récord sin afectar operaciones.
+                        </p>
+                        <div class="flex items-center gap-2 text-emerald-600 font-semibold text-sm">
+                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                            Obra Recepcionada Conforme
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    <!-- 7. MÉTODO VPA Y CTA FINAL -->
+        <section class="max-w-6xl mx-auto px-4 mb-24">
+            
+            <!-- Proceso en 4 Pasos -->
+            <div class="mb-24">
+                <h2 class="text-2xl md:text-3xl font-heading font-bold text-vpa-black text-center mb-12">
+                    De su consulta a la entrega de obra en 4 pasos
+                </h2>
+                <div class="grid grid-cols-1 md:grid-cols-4 gap-8 relative">
+                    <!-- Línea conectora (visible solo en desktop) -->
+                    <div class="hidden md:block absolute top-6 left-[12%] right-[12%] h-[2px] bg-slate-100 z-0"></div>
+                    
+                    <!-- Paso 1 -->
+                    <div class="relative z-10 text-center">
+                        <div class="w-12 h-12 rounded-full bg-vpa-black text-white flex items-center justify-center text-xl font-bold mx-auto mb-4 ring-8 ring-slate-50 shadow-sm">1</div>
+                        <h4 class="font-heading font-bold text-vpa-black mb-2">Contacto Rápido</h4>
+                        <p class="text-sm text-slate-500 px-2">Escríbanos por WhatsApp indicando el tipo de requerimiento.</p>
+                    </div>
+                    <!-- Paso 2 -->
+                    <div class="relative z-10 text-center">
+                        <div class="w-12 h-12 rounded-full bg-white text-slate-400 border-2 border-slate-200 flex items-center justify-center text-xl font-bold mx-auto mb-4 ring-8 ring-slate-50">2</div>
+                        <h4 class="font-heading font-bold text-vpa-black mb-2">Visita Técnica</h4>
+                        <p class="text-sm text-slate-500 px-2">Levantamiento presencial en terreno para evaluar el alcance.</p>
+                    </div>
+                    <!-- Paso 3 -->
+                    <div class="relative z-10 text-center">
+                        <div class="w-12 h-12 rounded-full bg-white text-slate-400 border-2 border-slate-200 flex items-center justify-center text-xl font-bold mx-auto mb-4 ring-8 ring-slate-50">3</div>
+                        <h4 class="font-heading font-bold text-vpa-black mb-2">Presupuesto formal</h4>
+                        <p class="text-sm text-slate-500 px-2">Propuesta transparente por partidas y plazos definidos.</p>
+                    </div>
+                    <!-- Paso 4 -->
+                    <div class="relative z-10 text-center">
+                        <div class="w-12 h-12 rounded-full bg-white text-slate-400 border-2 border-slate-200 flex items-center justify-center text-xl font-bold mx-auto mb-4 ring-8 ring-slate-50">4</div>
+                        <h4 class="font-heading font-bold text-vpa-black mb-2">Ejecución Garantizada</h4>
+                        <p class="text-sm text-slate-500 px-2">Faenas con supervisión continua hasta la recepción conforme.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Banner CTA Final (Contraste Oscuro) -->
+            <div class="bg-vpa-black rounded-[24px] p-10 md:p-16 text-center relative overflow-hidden shadow-2xl">
+                <!-- Resplandor decorativo de fondo -->
+                <div class="absolute top-0 right-0 w-80 h-80 bg-blue-600/20 rounded-full blur-3xl -mr-20 -mt-20"></div>
+                
+                <h2 class="text-3xl md:text-5xl font-heading font-bold text-white tracking-tight mb-6 relative z-10">
+                    ¿Listo para ejecutar su próximo proyecto?
+                </h2>
+                <p class="text-slate-300 max-w-2xl mx-auto mb-10 text-lg relative z-10 leading-relaxed">
+                    Hable directamente con nuestro equipo técnico y coordine una visita de evaluación sin costo en cualquier región del país.
+                </p>
+                
+                <div class="relative z-10">
+                    <!-- Enrutador Inteligente de WhatsApp -->
+                    <!-- Reemplaza "56900000000" por el número real del cliente -->
+                    <a href="https://wa.me/56900000000?text=Hola%20Constructora%20VPA,%20visité%20su%20sitio%20web%20y%20me%20gustaría%20agendar%20una%20evaluación%20técnica." target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-3 bg-emerald-500 hover:bg-emerald-600 text-white px-8 py-4 rounded-full font-bold text-lg transition-all hover:-translate-y-1 shadow-[0_10px_20px_-10px_rgba(16,185,129,0.5)]">
+                        <!-- Icono SVG de WhatsApp -->
+                        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M12.01 2.002c-5.522 0-9.998 4.477-9.998 9.997 0 1.956.519 3.844 1.486 5.493l-1.488 5.438 5.565-1.46c1.613.882 3.447 1.348 5.347 1.348 5.523 0 10.002-4.478 10.002-10.002S17.534 2.002 12.01 2.002zm5.727 14.394c-.244.685-1.42 1.31-1.956 1.41-.535.1-1.228.164-3.52-.786-2.753-1.14-4.52-4.004-4.656-4.186-.138-.182-1.112-1.48-1.112-2.825s.7-2.02 1.055-2.42c.245-.274.658-.363.963-.363.153 0 .292.003.415.008.31.01.464.032.673.535.25.602.824 2.01.897 2.158.073.148.12.32.022.518-.095.198-.145.32-.29.493-.146.17-.308.384-.442.507-.145.138-.297.29-.125.59.172.3.766 1.272 1.644 2.054.912.81 1.83 1.096 2.146 1.246.314.15.5.127.69-.092.19-.217.818-.952 1.036-1.28.218-.327.436-.273.72-.17.284.103 1.79.845 2.096.998.305.152.51.227.583.354.074.127.074.737-.17 1.423z"/></svg>
+                        Iniciar chat en WhatsApp
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- 8. FOOTER -->
+    <footer class="border-t border-slate-200 bg-white">
+        <div class="max-w-7xl mx-auto px-4 py-8 flex flex-col md:flex-row items-center justify-between gap-6">
+            <div class="flex items-center gap-3">
+                <img src="logo_vpa_black_vector.svg" alt="Constructora VPA" class="h-6 w-auto opacity-50 grayscale">
+                <span class="text-slate-400 text-sm">© 2026 Constructora VPA. Todos los derechos reservados.</span>
+            </div>
+            <div class="text-sm text-slate-400">
+                Diseñado y desarrollado por <a href="#" class="text-slate-600 font-semibold hover:text-vpa-blue transition-colors">Leaflow Technologies</a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
